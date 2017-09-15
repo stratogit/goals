@@ -1,12 +1,12 @@
 import * as firebase from 'firebase';
 
-const config = {
-    apiKey: "AIzaSyCI1lawoch8SXyHW49w_WcknbPQCBWBTfE",
-    authDomain: "goals-243c7.firebaseapp.com",
-    databaseURL: "https://goals-243c7.firebaseio.com",
-    projectId: "goals-243c7",
-    storageBucket: "",
-    messagingSenderId: "1004224613219"
-  };
+var config = {
+  apiKey: "AIzaSyC11dHq6z2EZAbl1dbhyyqYvaCCKn1IAJ0",
+  authDomain: "goals-268bc.firebaseapp.com",
+  databaseURL: "https://goals-268bc.firebaseio.com",
+  projectId: "goals-268bc",
+  storageBucket: "",
+  messagingSenderId: "638650988654"
+};
 
   export const firebaseApp = firebase.initializeApp(config);
