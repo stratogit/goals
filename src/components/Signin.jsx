@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {firebaseApp} from '../Firebase'
+import {Link} from 'react-router-dom';
+import {firebaseApp} from '../Firebase';
 
 class Signin extends Component {
 constructor(props){
@@ -24,6 +25,7 @@ signIn(){
         )
 
 }
+
     render(){
         return (
             <div className="form-inline" style={{margin: '5%'}}>
@@ -32,12 +34,14 @@ signIn(){
                      <input
                          className="form-control"
                          type="text"
+                         style={{marginRight: '5px'}}
                          placeholder="email"
                          onChange={event =>this.setState({email:event.target.value})}
                      />
                       <input
                          className="form-control"
                          type="password"
+                         style={{marginRight: '5px'}}
                          placeholder="password"  
                          onChange={event =>this.setState({password:event.target.value})}
                      />
@@ -49,6 +53,7 @@ signIn(){
                      </button>
                  </div>
                  <div>{this.state.error.messsage}</div>
+                 <div><Link  to={'/Signup'}> Please sign up Instead </Link> </div>
             </div>
             
          )
